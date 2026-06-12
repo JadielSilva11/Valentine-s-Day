@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia dos Namorados ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Custom cursor -->
+    <div id="cursor"></div>
+
+    <!-- Floating hearts canvas -->
+    <canvas id="hearts-canvas"></canvas>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+      <span id="lightbox-close">✕</span>
+      <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Back to top -->
+    <a href="#hero" id="back-top">↑</a>
+
+    <!-- =============================================
+        SECTION 1 — HERO
+    ============================================= -->
+    <section id="hero">
+      <div class="hero-text reveal">
+        <p class="hero-eyebrow">12 de Junho · Dia dos Namorados</p>
+        <h1 class="hero-headline">Feliz Dia dos<br>Namorados,<br>meu amor ❤️</h1>
+        <p class="hero-sub">
+          Cada dia ao seu lado é uma página do livro mais bonito que já li. Você é minha história favorita, meu lar, meu sorriso mais genuíno.
+        </p>
+        <a href="#historia" class="btn-primary">Nossa História ↓</a>
+      </div>
+
+      <div class="hero-photo">
+          <img src="img/capa.jpeg" alt="Nós dois">
+      </div>
+    </section>
+
+    <!-- =============================================
+        COUNTER
+    ============================================= -->
+    <section id="historia">
+      <div id="counter" style="width:100%;min-height:auto;padding:100px 24px;">
+        <p class="section-label reveal">Nosso tempo juntos</p>
+        <h2 class="section-title reveal">Estamos escrevendo nossa história há...</h2>
+
+        <div class="counter-grid reveal">
+          <div class="counter-box">
+            <span class="counter-num" id="c-days">000</span>
+            <span class="counter-label">Dias</span>
+          </div>
+          <div class="counter-box">
+            <span class="counter-num" id="c-hours">00</span>
+            <span class="counter-label">Horas</span>
+          </div>
+          <div class="counter-box">
+            <span class="counter-num" id="c-mins">00</span>
+            <span class="counter-label">Minutos</span>
+          </div>
+          <div class="counter-box">
+            <span class="counter-num" id="c-secs">00</span>
+            <span class="counter-label">Segundos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+        SECTION 2 — MUSIC
+    ============================================= -->
+    <section id="music">
+      <p class="section-label reveal">Para você</p>
+      <h2 class="section-title shimmer reveal">Nossa música ❤️</h2>
+
+      <div class="spotify-card reveal">
+        <div class="spotify-cover">
+            <img src="img/musica.jpeg" alt="Capa">
+        </div>
+
+        <div class="spotify-info">
+          <div>
+            <div class="spotify-song">Crystal</div>
+            <div class="spotify-artist">Froid</div>
+          </div>
+          <span class="spotify-heart">♥</span>
+        </div>
+
+        <div class="progress-bar-wrap" id="progress-wrap">
+          <div class="progress-bar-fill" id="progress-fill"></div>
+        </div>
+
+        <div class="time-row">
+          <span id="time-current">0:00</span>
+          <span id="time-total">0:00</span>
+        </div>
+
+        <div class="spotify-controls">
+          <button class="ctrl-btn" id="btn-shuffle" title="Embaralhar">⇄</button>
+          <button class="ctrl-btn" id="btn-prev" title="Anterior">⏮</button>
+          <button class="play-btn" id="btn-play" title="Play/Pause">▶</button>
+          <button class="ctrl-btn" id="btn-next" title="Próxima">⏭</button>
+          <button class="ctrl-btn" id="btn-repeat" title="Repetir">↻</button>
+        </div>
+          <audio id="audio-player" src="audio/crystal.mpeg" preload="metadata" autoplay></audio>
+          <audio id="audio-player" preload="metadata"></audio>
+      </div>
+    </section>
+
+    <!-- =============================================
+        SECTION 3 — GALLERY
+    ============================================= -->
+    <section id="gallery">
+      <p class="section-label reveal">Memórias</p>
+      <h2 class="section-title reveal">Nossos Melhores Momentos</h2>
+
+      <div class="mosaic reveal">
+        <!-- Foto 1 (grande) -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 1.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 2 -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 2.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 3 -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 3.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 4 -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 4.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 5 (larga) -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 8.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 6 -->
+        <div class="mosaic-item">
+         <img id="img1" src="img/foto 6.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 7 -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 7.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 8 -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 9.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 9 (grande) -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 5.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 10 -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 10.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 11 -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 11.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 12 -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 13.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 13 (larga) -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 12.jpeg" alt="Descrição">
+        </div>
+        <!-- Foto 14 (larga) -->
+        <div class="mosaic-item">
+          <img id="img1" src="img/foto 14.jpeg" alt="Descrição">
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+        SECTION 4 — LOVE LETTER
+    ============================================= -->
+    <section id="letter">
+      <p class="section-label reveal">Para ler com o coração</p>
+      <h2 class="section-title reveal">Uma Mensagem Para Você</h2>
+
+      <div class="letter-card reveal">
+        <div class="lines"></div>
+        <p class="letter-date">12 de Junho de 2026</p>
+        <div class="letter-body">
+          Meu amor,<br><br>
+
+          Há dias eu me pego olhando pra você e pensando: como eu tive tanta sorte? Não é a sorte de quem ganha na loteria — é a sorte de quem encontra, no meio de tanta gente, exatamente a pessoa que faltava.<br><br>
+
+          Você me ensinou que amor de verdade não grita, não cobra, não pesa. Ele só está. Está quando acordo, está quando tudo vai bem, e principalmente está quando nada está.<br><br>
+
+          Hoje é o nosso dia. Mas, honestamente, qualquer dia ao seu lado já é um dia especial. Obrigado por escolher ficar. Por me escolher todos os dias.<br><br>
+
+          Com amor,
+        </div>
+        <p class="letter-sign">Momô ❤️</p>
+      </div>
+    </section>
+
+    <!-- =============================================
+        SECTION 5 — REASONS
+    ============================================= -->
+    <section id="reasons">
+      <p class="section-label reveal">De coração</p>
+      <h2 class="section-title reveal">Por que eu te amo</h2>
+
+      <div class="reasons-grid">
+        <div class="reason-card reveal"><span class="reason-icon">❤️</span><p class="reason-text">Seu sorriso que ilumina qualquer ambiente</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">🌸</span><p class="reason-text">Seu jeito delicado de cuidar de mim</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">✨</span><p class="reason-text">Sua alegria contagiante</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">🤗</span><p class="reason-text">Seus abraços que curam qualquer dia ruim</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">😘</span><p class="reason-text">Seu apoio em todos os momentos</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">🎶</span><p class="reason-text">Sua voz linda e suave</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">🧠</span><p class="reason-text">Sua inteligência que me inspira</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">🗣</span><p class="reason-text">Suas conversas que nunca acabam</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">🌙</span><p class="reason-text">Sua companhia nas noites</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">💫</span><p class="reason-text">Seu coração generoso e bonito</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">🍑</span><p class="reason-text">Sua bunda GIGANTESCAAAA</p></div>
+        <div class="reason-card reveal"><span class="reason-icon">∞</span><p class="reason-text">Por ser exatamente quem você é</p></div>
+      </div>
+    </section>
+
+    <!-- =============================================
+        SECTION FINAL — CLOSING
+    ============================================= -->
+    <section id="closing">
+      <p class="section-label reveal">Para sempre</p>
+
+      <div class="closing-photo-wrap reveal">
+          <img src="img/foto fim.jpeg" alt="Nós dois">
+      </div>
+
+      <h2 class="closing-headline reveal">
+        Obrigado por fazer meus dias mais felizes.<br>Eu te amo infinitamente ❤️
+      </h2>
+
+      <button class="btn-primary reveal" onclick="burstHearts(this)">Enviar amor ❤️</button>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
